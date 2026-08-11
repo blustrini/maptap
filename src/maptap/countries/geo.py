@@ -9,8 +9,9 @@ class CountryGeo:
     ...
 
 
-def country_to_landmass(country: Country) -> CountryGeo:
-    """Get landmass associated with country.
+# Somehow load in the geojsons in data/geojsons
+def country_to_geometry(country: Country) -> CountryGeo:
+    """Get geometry associated with country.
 
     Args:
         country: Query country.
