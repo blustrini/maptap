@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Large data
+data/geojson/*.geojson
