@@ -17,3 +17,5 @@ To download the required geojsons files for each country, run:
 ```bash
 uv run python scripts/download_geometries.py
 ```
+
+These will be downloaded into `data/geojson`, and ill take up ~40MiB
