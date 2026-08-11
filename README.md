@@ -14,4 +14,6 @@ uv sync
 ## Downloading geojsons
 
 To download the required geojsons files for each country, run:
-`uv run python scripts/download_geometries.py`
+```bash
+uv run python scripts/download_geometries.py
+```
