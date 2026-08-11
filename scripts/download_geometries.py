@@ -11,7 +11,7 @@ from urllib.request import urlretrieve
 
 from maptap.countries.all_countries import Country
 
-# 1:10m high-resolution dataset
+# 10m high-resolution dataset
 DATA_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_countries.geojson"
 
 OUTPUT_DIR = Path(__file__).parent.parent / "data" / "geojson"
@@ -64,7 +64,7 @@ def fetch_and_split_geometries():
         else:
             missing_codes.append(iso3)
 
-    # Write missing codes to bad_iso3_codes.txt
+    # Write missing codes to bad codes file
     sorted_missing = sorted(missing_codes)
     with open(BAD_CODES_FILE, "w", encoding="utf-8") as f:
         for code in sorted_missing:
